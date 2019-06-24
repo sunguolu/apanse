@@ -1,0 +1,194 @@
+@charset "UTF-8";
+/**
+ * @authors Beijiguang (763503298@qq.com)
+ * @date    2016-07-01 16:15:20
+ * @version $Id-1.0$
+ */
+/* body common style */
+html, body, div, dt, dd, dl, form, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section,
+ul, ol, li, h1, h2, h3, h4, h5, h6{
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html{
+  font: 14px/1.8 Arial, Helvetica, Tahoma, Verdana, "Microsoft YaHei", sans-serif;
+  /* font-size: 63%\9;
+  font-size: 90%\8; */
+}
+body{
+  font-size: 14px;
+  /* font-size: 1.4rem; */
+  color: #333;
+  min-width: 1000px;
+  word-break: break-word;
+  word-wrap: break-word;
+  background-size: cover;
+  background-attachment: fixed;
+}
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+img, a img{
+  border: 0;
+  border-style: none;
+  outline: none;
+}
+.color-fff{color: #fff;}
+.color-black{color: #000;}
+/* 浮动样式 */
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clear{
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.ofh {
+  overflow: hidden;
+}
+.ofs{
+  overflow: scroll;
+}
+/* 边距以及缩进样式 */
+.text-indent2{
+  text-indent: 2em;
+}
+.mg-ctr{
+  margin: 0 auto;
+}
+.mg-t10{
+  margin-top: 10px;
+}
+.mg-t18{
+  margin-top: 18px;
+}
+.mg-lf10{
+  margin-left: 10px;
+}
+.mg-rt10{
+  margin-right: 10px;
+}
+.mg-b10{
+  margin-bottom: 10px;
+}
+.mg-b18{
+  margin-bottom: 18px;
+}
+.pd-t8{
+  padding-top: 8px;
+}
+.pd-t10{
+  padding-top: 10px;
+}
+.pd-t20{
+  padding-top: 20px;
+}
+.pd-bt10{
+  padding-bottom: 10px;
+}
+.pd-bt20{
+  padding-bottom: 20px;
+}
+.pd-bt12{
+  padding-bottom: 12px !important;
+}
+.pd-rl20{
+  padding: 0 20px;
+}
+.pd-lf10{
+  padding-left: 10px;
+}
+.pd-rt10{
+  padding-right: 10px;
+}
+/* 边框样式 */
+.border-1px{
+  border: 1px solid #b3d5ea;
+}
+.border-top{
+  border-top: 1px solid #b0b0b0;
+}
+.bordertom-1px{
+  border-bottom: 1px solid #b3d5ea;
+}
+.bordertom-none{
+  border-bottom: 0 !important;
+}
+/*列表页码的样式*/
+.list_pages {
+  padding: 40px 0 25px;
+  text-align: center;
+  font-size: 12px;
+  /* font-size: 1.2rem; */
+}
+.list_pages li {
+  display: inline;
+  color: #585858;
+  margin-right: 3px;
+}
+.list_pages li select, .list_pages li input{
+  line-height: 2.2;
+  border: 1px solid #d7d7d7;
+  border-radius: 2px;
+  outline:none;
+  /* height: 32px; */
+  text-indent: .2px;
+  padding: 6px 0;
+}
+.list_pages li input{
+  width: 45px;
+  text-indent: 0;
+  text-align: center;
+}
+.list_pages li select option{
+  text-indent: 2px;
+  padding: 0;
+  margin: 0;
+}
+.list_pages .pagebox_pre_nolink, .list_pages .pagebox_next_nolink {
+  padding: 7px 14px;
+  border: 1px solid #e4e4e4;
+  border-radius: 2px;
+  background-color: #fff;
+}
+.list_pages a, .list_pages .pageinfo {
+  padding: 7px 14px;
+  border: 1px solid #d7d7d7;
+  border-radius: 2px;
+  color: #333;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  text-decoration: none;
+}
+.list_pages .pageinfo{
+  cursor: default;
+}
+.list_pages .thisclass, .list_pages a:hover {
+  padding: 7px 14px;
+  border: 1px solid #0295fd;
+  color: #fff;
+  background-color: #0f76e0;
+  border-radius: 2px;
+}
+.list_pages .this-style{
+  color: #fff;
+  padding: 7px 14px;
+  background-color: #0f76e0;
+  border: 1px solid #0295fd;
+  border-radius: 2px;
+}
+/*back top style begin*/
+#HQbackArea {display:none;position: fixed;}
+#HQbackArea {z-index: 99999;}
+.backArea {width: 40px;bottom: 43px; right: 3px; display: block;}
+.backArea:hover{width: 40px; right: 3px;}
+#HQbackArea .backBtn {display: block;width: 40px;height: 40px;background: #0f76e0 url(../images/backtop-40-40.png) no-repeat;}
+#HQbackArea .backBtn:hover {display: block;width: 40px;height: 40px;background: #0295fd url(../images/backtop-40-40.png) no-repeat;}
+/*end*/

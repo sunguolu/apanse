@@ -1,0 +1,447 @@
+@charset "UTF-8";
+/**
+ * revised 2017-3-10
+ * @authors Leeyg (2452563196@qq.com)
+ * @date    2015-06-01 16:15:20
+ * @version $Id-1.0$
+ * ICBB2019
+ */
+html{
+  font-family: "Microsoft Yahei", "微软雅黑", SimSun, 宋体, sans-serif;
+}
+body{
+  background: url(../common/images/bg.png) repeat-y;
+  background-position: center top;
+  /*height: 1000px;*/
+  min-width: 1000px;
+}
+/**公用样式**/
+.clearall:after, .container:after, .time-show:after {/*清除浮动*/
+  content: '';
+  height: 0;
+  clear: both;
+  display: block;
+  visibility: hidden;
+}
+.main {
+  background: #fff repeat;
+}
+.container{
+  width: 1000px;
+}
+.col-lf672{
+  width: 672px;
+  padding-left:12px;
+}
+.col-rt300{
+  width: 300px;
+}
+.row-hg55{
+  height: 55px;
+}
+.is-minht{
+  min-height: 826px;
+}
+/**头部样式**/
+.header-nav{
+  height: 160px;
+  background: url(../common/images/top_bg.png) no-repeat center top;
+  /* background: #fff repeat; */
+}
+.top-header{
+  position: absolute;
+  width: 100%;
+  /*height: 180px;*/
+  height: 0px;
+  z-index: -9;
+}
+.top-header h1 {
+  position: fixed;
+  top: -999px;
+  left: -999px;
+  height: 0;
+  width: 0;
+}
+.top-header h2 {
+  position: fixed;
+  top: -999px;
+  left: -999px;
+  height: 0;
+  width: 0;
+}
+.logo-ttl{
+  width:140px;
+  height:125px;
+}
+/*
+.topbg-header{
+	width: 100%;
+	height: 180px;
+}*/
+.conf-title h1 {
+  width: 850px;
+  height: 70px;
+  font-size: 30px;
+  color: #004B66;
+  line-height: 120%;
+  overflow: hidden;
+  font-family: "Microsoft Yahei", "微软雅黑", SimHei,"黑体",SimSun,"宋体",sans-serif;
+}
+.conf-title h2 {
+  width: 850px;
+  height: 32px;
+  font-size: 24px;
+  color: #004B66;
+  line-height: 120%;
+  overflow: hidden;
+  font-family: "Microsoft Yahei", "微软雅黑", SimHei,"黑体",SimSun,"宋体",sans-serif;
+}
+.conf-date {
+  width: 700px;
+  height: 40px;
+  font-size: 22px;
+  color: #004B66;
+  line-height: 200%;
+  overflow: hidden;
+}
+.lg-ttl-time{
+  /*padding-top: 30px;*/
+}
+.language{
+  width: 1000px;
+  text-align:right;
+  /*margin-top: -150px;
+    margin-right: 5px;*/
+}
+.language a{
+  font-size: 13px;
+  color: #000;
+  text-decoration: none;
+}
+.google-trans {
+  width: 155px;
+  text-align:right;
+  font-size: 12px;
+}
+/*nav-menus*/
+.navs{
+  width: 100%;
+  min-width: 1000px;
+  background: #525382;
+}
+.menus{
+  width: 1200px;
+  height: 45px;
+  /* text-align: center; */
+}
+.menus li{
+  float: left;
+  width: 134px;
+  margin-right: 6px;
+  line-height: 45px;
+  text-align: center;
+}
+.menus li:first-child{
+  width: 107px;
+  text-align: left;
+}
+.menus li:last-child{
+  width: 107px;
+  text-align: right;
+  margin-right: 0px;
+}
+/* .menus li:before{
+  content: url(../common/images/menus_gd.png);
+  width: 1px;
+  height: 42px; 
+  float: left;
+  margin-top: 2px;
+} */
+/* .menus li:first-child:before{
+  content:url(../common/images/icon_home.png);
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+} */
+.menus li a{
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+.menus li a:hover{
+  color: #eaeaea;
+}
+.menus li:first-child > a{
+  padding-left: 2px;
+}
+/**首页主题分栏**/
+.language a:hover, .hg-wrap-35 a:hover, .normal-lists li a:hover{
+  text-decoration: underline;
+}
+.row-02{
+  margin-top: 6px;
+}
+.bg-sl{
+  background: #004B66;
+}
+.hg-wrap-38 h3{
+  font-size:20px;
+  font-weight: 500;
+  color: #fff;
+  height: 38px;
+  line-height: 1.8;
+}
+.hg-wrap-38 h3:before{
+  content: '';
+  display: block;
+  float: left;
+  margin: 2.2px 10px 0 9px;
+}
+.hg-wrap-38 h3.icon-list:before{
+  content:url(../common/images/icon_05.png);
+  width: 22px;
+  height: 18px;
+}
+.hg-wrap-38 h3.icon-art:before{
+  content:url(../common/images/icon_03.png);
+  width: 20px;
+  height: 24px;
+  margin-top: 6px;
+}
+.hg-wrap-38 h3.icon-other:before{
+  content:url(../common/images/icon_06.png);
+  width: 23px;
+  height: 23px;
+  margin-top: 6px;
+}
+.hg-wrap-38 a{
+  font-size: 12px;
+  color: #fc9855;
+  line-height: 2.85;
+  margin-right: 5px;
+  text-decoration: none;
+}
+.hg-wrap-38 a:after{
+  content: '+';
+  display: block;
+  float: left;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 2.08;
+
+}
+.linka a{
+  color: #000;
+}
+.row-button a{
+  font-size: 16px;
+  color: #004B66;
+  font-weight: bold;
+  border: 1px solid #004B66;
+  text-decoration: none;
+}
+.row-button a.bt01{
+  padding: 4px 4px;
+  width: 140px;
+  display: block;
+  margin: 3px 0;
+}
+.row-button a.bt02{
+  padding: 4px 4px;
+  width: 140px;
+  display: block;
+  margin: 3px 0;
+}
+/*首页分栏列表*/
+ul.normal-lists{
+  padding-top: 6px;
+}
+.normal-lists li{
+  height: 28px;
+  line-height: 2.0;
+  padding-right: 0;
+  padding-left: 0;
+}
+.normal-lists li a {
+  display: inline-block;
+  width: 360px;
+  word-break: keep-all;
+  word-wrap: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #4d4c4f;
+  text-decoration: none;
+}
+.normal-lists li a:before{
+  content: url(../common/images/icon_04.png);
+  display: inline-block;
+  float: left;
+  width: 8px;
+  height: 7px;
+  margin-top: -1px;
+  margin-right: 6px;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.normal-lists li p{
+  margin: 0;
+  padding-right: 6px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+/*侧边栏目块*/
+.col-rt-son{}
+.ttl_h2{
+  height: 42px;
+  border-bottom: solid 2px #cccccc;
+  margin-top: 0px;
+  line-height: 52px;
+}
+.ttl_h2 span {
+  font-size: 20px;
+  color: #004B66;
+  font-weight: bold;
+  display: block;
+  width: auto;
+  float: left;
+  border-bottom: solid 2px #004B66;
+  line-height: 40px;
+}
+.col-fl672 h3 {
+  font-size: 18px;
+  color: #0f76e0;
+  font-weight: bold;
+  font-family:'Arial Narrow', Arial, Helvetica, Tahoma, Verdana, "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+.col-rt-son > .row-txt p{
+  margin: 4px 0;
+}
+.col-rt-son > .row-txt p:first-of-type{
+  margin-top: 6px;
+}
+.col-rt-son > .row-txt td{
+  text-align: left;
+}
+/*会议日期倒计时*/
+.time-cut{
+  /*height: 108px;*/
+  background: #eee;
+}
+.notes{
+  margin: 0;
+  padding: 10px 0 10px 20px;
+}
+.time-show{
+  width: 100%;
+  padding-left: 20px;
+}
+.time-show strong{
+  margin-right:2px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  height:45px;
+  display:block;
+  float:left;
+  line-height:45px;
+  background: #fff;
+  padding: 0 8px;
+  border: 0px solid #dedede;
+  border-radius: 6px;
+}
+.time-show strong.day{
+  background:#000;
+  color:#fff;
+}
+strong.is-border{
+  border: 1px solid #dedede;
+}
+/**内页列表详细**/
+
+.row-txt{
+  font-family:"Benton Sans","Helvetica Neue",Helvetica,Arial,sans-serif,"Trebuchet MS","Microsoft YaHei", "微软雅黑";
+  font-weight:normal !important;
+  text-align: justify;
+}
+.images{
+  width: 1200px;
+  height: auto;
+  max-width: 1200px;
+  max-height: 400px;
+}
+
+.row-txt h3{
+
+  width: 100%;
+  padding: 0 2px;
+  margin: 10px 0;
+  color: #FFF;
+  background: #00598a;
+  font-weight: 100 !important;
+  font-family: "arial narrow","Benton Sans","Helvetica Neue",Helvetica,Arial,sans-serif,"Trebuchet MS","Microsoft YaHei", "微软雅黑";
+  font-size: 18px;
+  height: auto;
+  float: left;
+  display: block;
+}
+
+.row-txt p{
+  padding: 8px 12px;
+  /*margin: 4.5px 0;*/
+  font-weight:normal !important;
+  text-align: justify;
+}
+
+.row-txt p:first-of-type{
+  margin-top: 6px;
+}
+.row-txt a{
+  color: #004B66;
+  text-decoration: underline;
+}
+
+.row-txt a:hover{
+  text-decoration: underline;
+}
+
+.row-txt ul{
+  /*list-style-position: outside;	*/
+  margin-left: 25px;
+  list-style: disc outside;
+  list-style-type: disc;
+  /*list-style-position: inside;*/
+}
+.row-txt ul:li{
+  /*margin-left: 25px;*/
+  list-style: disc outside;
+  list-style-type: disc;
+}
+.row-txt li{
+  /*margin-left: 25px;*/
+  list-style: disc outside;
+  list-style-type: disc;
+}
+.row-txt > h4{
+  font-size: 18px;
+  text-align: center;
+  padding: 12px 0 0 0;
+}/*end**/
+
+/*footer style*/
+.main-footer{
+  width: 100%;
+  height: 160px;
+  background: #ffffff;
+  border-top: 8px solid #525382;
+}
+.foot-ctr{
+  text-align: center;
+}
+.foot-ctr p{
+  margin: 0;
+  line-height: 2.6;
+}

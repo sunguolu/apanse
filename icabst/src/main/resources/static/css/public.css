@@ -1,0 +1,241 @@
+@charset "utf-8";
+/* -----------H-ui前端框架-----------------------
+H-ui.reset.css v1.2
+重定义浏览器默认样式
+H-ui.reser CSS file for H-ui
+Copyright H-ui Inc.
+http://www.H-ui.net
+date:2014.10.09
+Created & Modified by guojunhui.
+----------------------------------------------*/
+/*1 重定义浏览器默认样式
+	Name:			style_reset
+	Level:			Global
+	Explain:		重定义浏览器默认样式
+	Last Modify:	jackying
+*/
+/**{word-wrap:break-word}
+html,body,h1,h2,h3,h4,h5,h6,hr,p,iframe,dl,dt,dd,ul,ol,li,pre,form,button,input,textarea,th,td,fieldset{margin:0;padding:0}
+ul,ol,dl{list-style-type:none}
+html,body{*position:static}
+html{font-family: sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit}
+input,button{overflow: visible;vertical-align:middle;outline:none}
+body,th,td,button,input,select,textarea{font-family:"Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,tahoma,arial,Verdana,sans-serif,"WenQuanYi Micro Hei","\5B8B\4F53";font-size:14px;color: #333;-webkit-font-smoothing:antialiased;-moz-font-smoothing:antialiased}
+body{line-height:1.6}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+a,area{outline:none;blr:expression(this.onFocus=this.blur())}
+a{text-decoration:none;cursor: pointer}
+a:hover{text-decoration: inherit;outline:none}
+a.ie6:hover{zoom:1}
+a:focus{outline:none}
+
+a:hover,a:active{outline:none}:focus{outline:none}
+sub,sup{vertical-align:baseline}*/
+body{margin: 0; padding: 0;}
+/*img*/
+img{border:0;vertical-align:middle}
+a img,img{-ms-interpolation-mode:bicubic}
+.img-responsive{max-width: 100%;height: auto}
+/*IE下a:hover 背景闪烁*/
+html{overflow:-moz-scrollbars-vertical;zoom:expression(function(ele){ele.style.zoom = "1";document.execCommand("BackgroundImageCache",false,true)}(this));}
+ul li{
+  list-style: none;
+}
+/*HTML5 reset*/
+header,footer,section,aside,details,menu,article,section,nav,address,hgroup,figure,figcaption,legend{display:block;margin:0;padding:0}time{display:inline}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]){display:none}
+legend{width:100%;margin-bottom:20px;font-size:21px;line-height:40px;border:0;border-bottom:1px solid #e5e5e5}
+legend small{font-size:14px;color:#999}
+svg:not(:root) {overflow: hidden}
+fieldset {border-width:0;padding: 0.35em 0.625em 0.75em;margin: 0 2px;border: 1px solid #c0c0c0}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {height: auto}
+input[type="search"] {-webkit-appearance: textfield; /* 1 */-moz-box-sizing: content-box;-webkit-box-sizing: content-box; /* 2 */box-sizing: content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {-webkit-appearance: none}
+/*
+	Name:			style_clearfix
+	Example:		class="clearfix|cl"
+	Explain:		Clearfix（简写cl）避免因子元素浮动而导致的父元素高度缺失能问题
+*/
+.cl:after,.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}.cl,.clearfix{zoom:1}
+.width-100{width: 100%;}
+.w-1200{width: 1200px;margin: 0 auto;}
+.auto{margin: 0 auto;}
+.fl{float: left;}
+.fr{float: right;}
+.clear{clear: both;}
+/*2.1 响应式栅格系统*/
+.row{ box-sizing:border-box}
+/*[class^="col-"],[class*=" col-"]{box-sizing:border-box; float:left;min-height: 1px;position: relative}*/
+.col-1{width:8.33333%}
+.col-2{width:16.66667%}
+.col-3{width:25%}
+.col-4{width:33.33333%}
+.col-5{width:41.66667%}
+.col-6{width:50%}
+.col-7{width:58.33333%}
+.col-8{width:66.66667%}
+.col-9{width:75%}
+.col-10{width:83.33333%}
+.col-11{width:91.66667%}
+.col-12{width:100%}
+/*局部模块平分*/
+.col-1-1{ width:100%}
+.col-2-1{ width:50%}
+.col-3-1{ width:33.333333%}
+.col-3-2{ width:66.666667%}
+.col-4-1{ width:25%}
+.col-4-4{ width:20%}
+.col-4-2{ width:28%}
+.col-4-5{ width:35%}
+.col-4-3{ width:75%}
+.col-5-1{ width:20%}
+.col-5-2{ width:40%}
+.col-5-3{ width:60%}
+.col-6-5{ width:70%}
+.col-5-4{ width:80%}
+.col-5-5{ width:90%}
+.col-5-9{ width:95%}
+.col-6-6{ width:100%}
+
+@media (max-width:767px){
+  .responsive [class^="col-"],.responsive [class*=" col-"]{float:none!important;width:auto!important}
+  .responsive [class^="col-offset-"],.responsive [class*=" col-offset-"]{ margin-left:0px!important}
+}
+.duan{text-align:justify;}
+/*margin-top*/
+.mt-4{margin-top:4px}
+.mt-5{margin-top:5px}
+.mt-10{margin-top:10px}
+.mt-15{margin-top:15px}
+.mt-20{margin-top:20px}
+.mt-25{margin-top:25px}
+.mt-30{margin-top:30px}
+.mt-35{margin-top:35px}
+.mt-40{margin-top:40px}
+.mt-50{margin-top:50px}
+/*margin-bottom*/
+.mb-5{margin-bottom:5px}
+.mb-10{margin-bottom:10px}
+.mb-15{margin-bottom:15px}
+.mb-20{margin-bottom:20px}
+.mb-30{margin-bottom:30px}
+.mb-40{margin-bottom:40px}
+.mb-50{margin-bottom:50px}
+/*margin-left*/
+.ml-5{margin-left:5px}
+.ml-10{margin-left:10px}
+.ml-15{margin-left:15px}
+.ml-20{margin-left:20px}
+.ml-30{margin-left:30px}
+.ml-40{margin-left:40px}
+.ml-50{margin-left:50px}
+.ml-60{margin-left:60px}
+.ml-70{margin-left:70px}
+.ml-80{margin-left:80px}
+.ml-90{margin-left:90px}
+.ml-100{margin-left:100px}
+/*margin-right*/
+.mr-5{margin-right:5px}
+.mr-10{margin-right:10px}
+.mr-15{margin-right:15px}
+.mr-20{margin-right:20px}
+.mr-25{margin-right:25px}
+.mr-30{margin-right:30px}
+.mr-40{margin-right:40px}
+.mr-50{margin-right:50px}
+/*padding-bottom*/
+.pb-2{padding-bottom:2px}
+.pb-5{padding-bottom:5px}
+.pb-10{padding-bottom:10px}
+.pb-20{padding-bottom:10px}
+.pb-30{padding-bottom:30px}
+.pb-50{padding-bottom:50px}
+/*padding-top*/
+.pt-5{padding-top:5px}
+.pt-10{padding-top:10px}
+.pt-15{padding-top:15px}
+.pt-20{padding-top:20px}
+.pt-25{padding-top:25px}
+.pt-30{padding-top:30px}
+.pt-35{padding-top:35px}
+.pt-40{padding-top:40px}
+.pt-50{padding-top:50px}
+/*padding-left*/
+.pl-5{padding-left:5px}
+.pl-10{padding-left:10px}
+.pl-20{padding-left:20px}
+.pl-23{padding-left:23px}
+.pl-30{padding-left:30px}
+.pl-40{padding-left:40px}
+.pl-45{padding-left:45px}
+.pl-50{padding-left:50px}
+.pl-55{padding-left:55px}
+.pl-60{padding-left:60px}
+.pl-65{padding-left:65px}
+.pl-70{padding-left:70px}
+.pl-75{padding-left:75px}
+.pl-85{padding-left:85px}
+.pl-100{padding-left:100px}
+/*padding-right*/
+.pr-5{padding-right:5px}
+.pr-10{padding-right:10px}
+.pr-15{padding-right:15px}
+.pr-20{padding-right:20px}
+.pr-30{padding-right:30px}
+.pr-40{padding-right:40px}
+.pr-45{padding-right:45px}
+/*padding*/
+.pd-5{padding:5px}
+.pd-10{padding:10px}
+.pd-15{padding:15px}
+.pd-20{padding:20px}
+.pd-30{padding:30px}
+.pd-40{padding:40px}
+.pd-45{padding:45px}
+/*font-size*/
+.f-12{font-size:12px}
+.f-14{font-size:14px}
+.f-16{font-size:16px}
+.f-18{font-size:18px}
+.f-20{font-size:20px}
+.f-24{font-size:24px}
+.f-26{font-size:26px}
+.f-28{font-size:28px}
+.f-30{font-size:30px}
+.f-40{font-size:40px}
+.f-60{font-size:60px}
+/*font-weight*/
+.f-w500{font-weight: 500;}
+.f-b{font-weight: bold;}
+/*line-height*/
+.lh-16{line-height:16px}
+.lh-18{line-height:18px}
+.lh-20{line-height:20px}
+.lh-22{line-height:22px}
+.lh-24{line-height:24px}
+.lh-26{line-height:26px}
+.lh-28{line-height:28px}
+.lh-30{line-height:30px}
+.lh-35{line-height:35px}
+.lh-36{line-height:36px}
+.lh-40{line-height:40px}
+.lh-60{line-height:60px}
+.color_9{color: #999999;}
+.color-6{color: #666666;}
+.color-03{color: #525382;}
+.color_white{color: #FFFFFF;}
+.color_zhu{color: #053065;}
+.color_red{color:#d81e1e}
+.color_3d{ color: #6c6969;}
+.color_1{color: #111111;}
+/*bg*/
+.bg_white{background: #ffffff;}
+.bg_hui{background: #efefef;}
+.bg_public{background: #f5f5f5;}
+
+
+/*border_bottom*/
+.border_bottom-1{border-bottom:1px solid #d9d4d4;}

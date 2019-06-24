@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=1200" name="viewport">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>提交参会</title>
+    <meta name="keywords" content="提交参会"/>
+    <meta name="description" content="提交参会"/>
+	<link rel="icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/public.css"/>
+    <link rel="stylesheet" href="../css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/main-zh.css"/>
+    <link rel="stylesheet" href="../css/global.css"/>
+    <link rel="stylesheet" href="../lib/layui/css/layui.css">
+    <script type="text/javascript" src="../lib/layui/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="../js/superslide.2.1.js"></script>
+    <script type="text/javascript" src="../js/js.js"></script>
+    <script type="text/javascript" src="../js/xadmin.js"></script>
+</head>
+<body>
+<div class="width-100 all_bg">
+    <!--header star-->
+    <div class="header">
+
+
+    <header class="img">
+      <div>
+        <div class="w-1200">
+          <div style="width:25%;height:200px; float:left;display:inline-block;">
+            <img style="width: 200px;height: 200px;" src="../img/ICABST_LOGO2.png">
+          </div>
+          <div style="width:75%;height:200px; float:left;display:inline-block;">
+            <p class="banner_p" style="padding:50px 0;font-family:'Times New Roman';font-weight:bold" align="right">
+              Int’l Conf. On Advances in Biological Science and Technology<br/>
+							2019国际前沿生物科学与技术国际会议(ICABST2019)<br/>
+              2019年12月26日-28日
+            </p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+
+    <div class="navs">
+      <ul class="menus mg-ctr">
+        <li><a title="ICABST2019首页" href="/apanse/index">ICABST</a></li>
+        <li><a title="ICABST2019大会详情" href="/apanse/topics">大会详情</a></li>
+        <li><a title="ICABST2019组织机构" href="/apanse/organization">组织机构</a></li>
+        <li><a title="ICABST2019特邀嘉宾" href="/apanse/speakers">参会嘉宾</a></li>
+        <li><a title="ICABST2019会议日程" href="/apanse/program">会议日程</a></li>
+        <li><a title="ICABST2019大会征文" href="/apanse/cfp">大会征文</a></li>
+        <li><a title="ICABST2019参会注册" href="/apanse/registration">参会注册</a></li>
+        <li><a title="ICABST2019会议地点" href="/apanse/venue">会议地点</a></li>
+    	<li><a title="ICABST2019英文版" href="/apanse/en">English</a></li>
+      </ul>
+    </div>
+        
+</div>
+<!--header end-->
+
+<div class="w-1200 bg_white pt-30">
+
+    <div class="page; lh-40">
+        <div class="page_left col-6-5 fl" style="border-right: 2px dashed; border-color: #c3bfbf; padding: 10px;">
+            <div class="background4" style="padding-left:85px; padding-bottom: 20px; line-height: 65px">参会信息提交说明</div>
+            <div class="public_p pb-20">
+                    <p>1. 所有学者提交的参会信息都将做保密处理</p>
+                    <p>2. 通过如下表格在线提交参会信息完成预注册</p>
+                    <p>3. 如在线提交参会信息失败，可将相关信息填写后复制到word文档中并和报告摘要一起发送至会务邮箱icabst@apanse.com</p>
+                    <p>4. 在提交成功后，大会将在1-2个工作日内为您反馈相关信息</p>
+					 <div class="secondary-title f-b"></div>
+            <div class="background4" style="padding-left:85px; padding-bottom: 20px; line-height: 65px">在线提交</div>
+					<div class="secondary-title f-b"></div>
+                <form class="layui-form layui-form-pane">
+                    <div class="layui-card">
+                        <div class="layui-form-item three-level-title">
+                            <strong>一、个人信息（*为必填）</strong>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <input type="hidden" id="uploadFileUrlID" name="uploadFileUrl" required lay-verify="required"
+                                   autocomplete="off" class="layui-input">
+                                <label for="usernameId" class="layui-form-label">
+                                    <span class="x-red">*</span>姓名
+                                </label>
+                                <div class="layui-input-inline">
+                                    <input type="text" id="usernameId" name="userName" required lay-verify="required"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-inline fr">
+                                    <label for="phoneId" class="layui-form-label">
+                                        <span class="x-red">*</span>手机
+                                    </label>
+                                    <div class="layui-input-inline">
+                                        <input type="text" id="phoneId" name="phone" required lay-verify="required"
+                                            autocomplete="off" class="layui-input">
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label for="emailId" class="layui-form-label">
+                                    <span class="x-red">*</span>邮箱
+                                </label>
+                                <div class="layui-input-inline">
+                                    <input type="text" id="emailId" name="email" required lay-verify="required"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-inline fr">
+                                <label for="qqId" class="layui-form-label">
+                                    QQ
+                                </label>
+                                <div class="layui-input-inline">
+                                    <input type="text" id="qqId" name="qq"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+						
+						                        <div class="layui-form-item">
+						    <div class="layui-inline">
+						        <label for="secondemailId" class="layui-form-label">
+						            备用邮箱
+						        </label>
+						        <div class="layui-input-inline">
+						            <input type="text" id="secondemailId" name="secondemail"
+						                autocomplete="off" class="layui-input">
+						        </div>
+						    </div>
+						    <div class="layui-inline fr">
+						        <label for="wechatId" class="layui-form-label">
+						            微信
+						        </label>
+						        <div class="layui-input-inline">
+						            <input type="text" id="wechatId" name="wechat"
+						                autocomplete="off" class="layui-input">
+						        </div>
+						    </div>
+						</div>
+                        <div class="layui-form-item pr-20">
+                            <label for="positionId" class="layui-form-label">
+                                <span class="x-red">*</span>职称
+                            </label>
+                            <div class="layui-input-block">
+                                <input type="text" id="positionId" name="position" required lay-verify="required"
+                                           autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item pr-20">
+                            <label for="researchFieldId" class="layui-form-label">
+                                <span class="x-red">*</span>研究领域
+                            </label>
+                            <div class="layui-input-block">
+                                <input type="text" id="researchFieldId" name="researchField" required lay-verify="required"
+                                       autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item pr-20">
+                            <label for="affiliationId" class="layui-form-label">
+                                <span class="x-red">*</span>单位院系
+                            </label>
+                            <div class="layui-input-block">
+                                <input type="text" id="affiliationId" name="affiliation" required lay-verify="required"
+                                       autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item pr-20">
+                            <label for="addressId" class="layui-form-label">
+                                <span class="x-red">*</span>通讯地址
+                            </label>
+                            <div class="layui-input-block">
+                                <input type="text" id="addressId" name="address" required lay-verify="required"
+                                       autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item three-level-title">
+                            <strong>二、邀请函信息</strong>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-inline">
+                                <label for="passportId" class="layui-form-label">
+                                    护照号
+                                </label>
+                                <div class="layui-input-inline">
+                                    <input type="text" id="passportId" name="passport"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                            <div class="layui-inline fr">
+                                <label for="birthdayId" class="layui-form-label">
+                                    <span class="x-red">*</span>出生日期
+                                </label>
+                                <div class="layui-input-inline">
+                                    <input type="text" id="birthdayId" name="birthday" required lay-verify="required"
+                                        autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-form-item three-level-title">
+                            <strong>三、参会信息</strong>
+                        </div>
+                        <div class="layui-form-item pr-20">
+                            <label for="conferenceTypeId"  class="layui-form-label"><span class="x-red">*</span>参会类型</label>
+                            <div id="conferenceTypeId" class="layui-input-block">
+                                <select name="conferenceType" lay-verify="required" lay-filter="aihao">
+                                    <option value="0"></option>
+									<option value="Oral">口头报告</option>
+                                    <option value="Poster">张贴海报</option>
+                                    <option value="Listener">听众</option>
+                                    <option value="Company">企业参会</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item pr-20">
+                            <label for="registerTypeId"  class="layui-form-label"><span class="x-red">*</span>缴费类型</label>
+                            <div id="registerTypeId" class="layui-input-block">
+                                <select name="registerType" lay-verify="required" lay-filter="aihao">
+									<option value="0"></option>
+									<option value="Regular">在职教师/科研人员-标准注册-3200RMB/450USD（10月31日前）</option>
+									<option value="Late">在职教师/科研人员-后期注册-3600RMB/520USD</option>
+									<option value="Student-Regular">在读硕士/博士-标准注册-2800RMB/400USD（10月31日前）</option>
+									<option value="Student-Late">在读硕士/博士-后期注册-3200RMB/470USD</option>
+									<option value="Company-Regular">企业代表-标准注册-4200RMB/600USD（10月31日前）</option>
+									<option value="Company-Late">在读硕士/博士-后期注册-4900RMB/700USD</option>
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item pr-20">
+                            <label for="paymentId"  class="layui-form-label"><span class="x-red">*</span>支付方式</label>
+                            <div id="paymentId" class="layui-input-block">
+                                <select name="payment" lay-verify="required" lay-filter="aihao">
+                                    <option value="0"></option>
+									<option value="对公转账">通过单位对公转账</option>
+									<option value="个人转账">个人银行转账（手续费自理）</option>
+									<option value="微信/支付宝">支付宝/微信</option>
+									<option value="现场支付">现场支付（仅适合后期注册的类型）</option>
+									<option value="其他">其他</option>
+                                </select>
+                            </div>
+                        </div>
+						<div class="layui-form-item pr-20">
+						    <label for="invoiceId"  class="layui-form-label"><span class="x-red">*</span>发票类型</label>
+						    <div id="invoiceId" class="layui-input-block">
+						        <select name="invoice" lay-verify="required" lay-filter="aihao">
+						            <option value="0"></option>
+									<option value="无需发票">无需发票</option>
+									<option value="国际发票">国际发票</option>
+									<option value="国内发票">国内发票（需额外缴纳6%税费）</option>
+									<option value="暂不需要">暂时不需要，需要时再开</option>
+						        </select>
+						    </div>
+						</div>
+                        <div class="layui-form-item pr-20">
+                            <label for="issueId"  class="layui-form-label"><span class="x-red">*</span>议题</label>
+                            <div id="issueId" class="layui-input-block">
+                                <select name="issue" lay-verify="required" lay-filter="aihao">
+                                    <option value="0"></option>
+									<option value="Session 1">1. 分子生物学</option>
+									<option value="Session 2">2. 生物医学与制药</option>
+									<option value="Session 3">3. 生物力学与工程</option>
+									<option value="Session 4">4. 生物及分子材料</option>
+									<option value="Session 5">5. 生物化学</option>
+									<option value="Session 6">6. 农业食品及动植物</option>
+									<option value="Session 7">7. 其他相关领域应用</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item pr-20">
+                            <label for="titleId" class="layui-form-label"><span class="x-red">*</span>报告题目</label>
+                            <div class="layui-input-block">
+                                <input type="text" id="titleId" name="title" required lay-verify="required"
+                                       autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+
+                        
+                        
+                        
+                        
+                        <!-- <div class="layui-form-item">
+                            <label for="countryId" class="layui-form-label">
+                                <span class="x-red">*</span>国家
+                            </label>
+                            <div class="layui-input-inline">
+                                <input type="text" id="countryId" name="country" required lay-verify="required"
+                                       autocomplete="off" class="layui-input">
+                            </div>
+                        </div> -->
+
+                        <div class="layui-card-body">
+                            <form class="layui-form" action="" lay-filter="component-form-element">
+                                <div class="layui-row layui-col-space10 layui-form-item">
+                                    <div class="layui-form-item">
+                                        <div class="layui-upload">
+                                            <button type="button" class="layui-btn layui-btn-normal" id="testList">选择文件</button>
+                                            <span class="hint"><font class="f-b">待状态变为“上传成功”后再点击“提交”。</font></span>
+                                            <div class="layui-upload-list">
+                                                <table class="layui-table">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>文件名</th>
+                                                        <th>大小</th>
+                                                        <th>状态</th>
+                                                        <th>操作</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody id="demoList"></tbody>
+                                                </table>
+                                            </div>
+                                            <!--<button type="button" class="layui-btn" id="testListAction">开始上传</button>-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="add">提交</button>
+                            <button type="reset" class="layui-btn layui-btn-primary" onclick="cancel()">取消</button>
+                        </div>
+
+                    </div>
+                    <div class="layui-card">
+
+
+                    </div>
+                </form>
+
+
+                </table>&nbsp;<br/>&nbsp;
+            </div>
+
+        </div>
+
+    <div class="page_right col-4-1 fr mr-25">
+      <div class="important mt-10">
+        <div class="f-30 text-center pt-20 pb-20 color-03 f-b">重要日期</div>
+        <ul>
+            <p>摘要截止日期: 2019年10月20日</p>
+            <p>全文截稿日期: 长年征稿（本批次7月30日截止）</p>
+            <p>会议日期:2019年12月26日-28日</p>
+			<p>参会注册截止: 2019年10月31日</p>
+			<p>**逾期未完成注册，将按照后期注册处理</p>
+        </ul>
+      </div>
+      <div class="contact mt-10">
+        <div class="f-30 text-center pt-20 pb-20 color-03 f-b">组织机构</div>
+        <ul>
+            <p>亚太自然科学与工程协会</p>
+        </ul>
+      </div>
+      <div class="contact mt-10">
+        <div class="f-30 text-center pt-20 pb-20 color-03 f-b">联系我们</div>
+        <ul>
+            <p>会务邮箱：icabst@apanse.com</p>
+            <p>投稿邮箱：editor@apanse.com</p>
+            <p>咨询电话：0371-63226982</p>
+            <p>手机号码：18137471420</p>
+            <p>咨询QQ：3475177122</p>
+            <p>微信公众号：APANSE</p>
+        </ul>
+      </div>
+    </div>
+                
+        <div class="clear"></div>
+
+
+    </div>
+
+</div>
+
+<!--footer-->
+<footer class="main-footer">
+  <div class="text-center lh-36 footer w-1200">
+    <p style="font-family:'Times New Roman';font-weight:bold">2019 Int’l Conf. On Advances in Biological Science and Technology (ICABST2019)<br/>
+		Conference Secretary: Jason Sun; Assistant: Alex Liu<br/>
+		Email: icabst@apanse.com; contact@apanse.com;    Tel.: +86-0371-63226982; Cellphone: +86-18137471420<br/>Copyright © APANSE All rights reserved.
+		</p>
+  </div>
+</footer>
+
+
+<script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?1b2a9aec4c523c4bf017a7fdc9333187";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+
+    layui.use(['form', 'layer', 'upload'], function () {
+        var form = layui.form
+            , layer = layui.layer;
+        var $ = layui.jquery
+            , upload = layui.upload;
+
+        //自定义验证规则
+        form.verify({
+            contractId: function (value) {
+                if (value.length == '') {
+                    return '合同id不能为空';
+                }
+            },
+            contractType: function (value) {
+                if (value.length == '') {
+                    return '合同类型不能为空';
+                }
+            },
+            contractName: function (value) {
+                if (value.length == '') {
+                    return '合同名称不能为空';
+                }
+            }
+
+        });
+
+
+        //监听提交
+        form.on('submit(add)', function (data) {
+            console.log(JSON.stringify(data.field));
+            jQuery.ajax({
+                type: "POST",
+                data: JSON.stringify(data.field),
+                dataType: "json",
+                async: false,
+                contentType: "application/json;charset-UTF-8",
+                url: "/apanse/saveEXC",
+                success: function (data) {
+                    if (data.code == '000000') {
+                        layer.alert("提交成功", {icon: 6}, function () {
+                            // 获得frame索引
+                            var index = parent.layer.getFrameIndex(window.name);
+                            //刷新父页面
+                            window.parent.location.reload();
+                            //关闭当前frame
+                            parent.layer.close(index);
+                        });
+                    } else {
+                        layer.alert("提交失败：" + data.message, {icon: 6});
+                    }
+                }
+            });
+            return false;
+        });
+
+
+        //多文件列表示例
+        var demoListView = $('#demoList')
+        var uploadListIns = upload.render({
+            elem: '#testList'
+            , url: '/apanse/uploadFile'
+            , accept: 'file'
+            , multiple: false
+            , auto: true
+            , size: 20480
+            , bindAction: '#testListAction'
+            , before: function (obj) {
+                //将每次选择的文件追加到文件队列
+                var files = this.files = obj.pushFile();
+                //读取本地文件
+                obj.preview(function (index, file, result) {
+                    var tr = $(['<tr id="upload-' + index + '">'
+                        , '<td>' + file.name + '</td>'
+                        , '<td>' + (file.size / 1014).toFixed(1) + 'kb</td>'
+                        , '<td>正在上传</td>'
+                        , '<td>'
+                        // , '<button class="layui-btn layui-btn-xs demo-reload layui-hide">重传</button>'
+                        // , '<button class="layui-btn layui-btn-xs layui-btn-danger demo-delete">删除</button>'
+                        , '</td>'
+                        , '</tr>'].join(''));
+
+                    //单个重传
+                    tr.find('.demo-reload').on('click', function () {
+                        obj.upload(index, file);
+                    });
+
+                    //删除
+                    tr.find('.demo-delete').on('click', function () {
+                        delete files[index]; //删除对应的文件
+                        tr.remove();
+                        uploadListIns.config.elem.next()[0].value = ''; //清空 input file 值，以免删除后出现同名文件不可选
+                    });
+
+                    demoListView.append(tr);
+                });
+            }
+            , done: function (res, index, upload) {
+                if (res.code == 0) { //上传成功
+                    var tr = demoListView.find('tr#upload-' + index)
+                        , tds = tr.children();
+                    (document).getElementById("uploadFileUrlID").value = res.data;
+                    tds.eq(2).html('<span style="color: #5FB878;">上传成功</span>');
+                    tds.eq(3).html(''); //清空操作
+                    return delete this.files[index]; //删除文件队列已经上传成功的文件
+                }
+                this.error(index, upload);
+            }
+            , error: function (index, upload) {
+                var tr = demoListView.find('tr#upload-' + index)
+                    , tds = tr.children();
+                tds.eq(2).html('<span style="color: #FF5722;">上传失败</span>');
+                tds.eq(3).find('.demo-reload').removeClass('layui-hide'); //显示重传
+            }
+        });
+
+    });
+
+    function dataJson1() {
+        var username = (document).getElementById("usernameId").value;
+        var phone = (document).getElementById("phoneId").value;
+        var str = {"username": username, "phone": phone}
+        var str2 = {"nameAndPhoneVO": str};
+        console.log(JSON.stringify(str2));
+        return JSON.stringify(str2);
+    }
+
+
+    function cancel() {
+        // 获得frame索引
+        var index = parent.layer.getFrameIndex(window.name);
+        //关闭当前frame
+        parent.layer.close(index);
+    }
+</script>
+
+
+</div>
+</body>
+</html>
